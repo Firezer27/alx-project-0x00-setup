@@ -3,51 +3,19 @@ import Button from "@/components/Button";
 
 const Landing: React.FC = () => {
   return (
-    <div className="p-8 min-h-screen bg-gray-50">
-      <h1 className="text-3xl font-bold text-center mb-4">
-        Explore Amazing Stays
-      </h1>
-      <p className="text-center text-gray-600 mb-12">
-        Discover villas, apartments, and unique homes worldwide
-      </p>
+    <div className="p-8">
+      <h1 className="text-xl font-extralight mb-8">Landing Page</h1>
 
-      {/* Button Showcase */}
-      <div className="flex flex-col items-center gap-8 mb-16">
-        <h2 className="text-2xl font-semibold">Button Component Demo</h2>
-
-        <div className="flex flex-wrap gap-4 justify-center">
-          <Button title="Small Rounded" size="small" shape="rounded-sm" />
-          <Button title="Medium Default" size="medium" />
-          <Button title="Large Full" size="large" shape="rounded-full" />
-        </div>
-
-        <div className="flex flex-wrap gap-4 justify-center">
-          <Button title="Primary (Default)" />
-          <Button title="Secondary" variant="secondary" shape="rounded-full" />
-          <Button title="Outline Style" variant="outline" size="large" />
-        </div>
-
-        <div className="flex flex-wrap gap-4 justify-center">
-          <Button
-            title="Small + Full"
-            size="small"
-            shape="rounded-full"
-            variant="secondary"
-          />
-          <Button
-            title="Large + Outline"
-            size="large"
-            variant="outline"
-            shape="rounded-sm"
-          />
-        </div>
+      {/* Button instances with different sizes and shapes */}
+      <div className="flex flex-wrap gap-6 mb-12 justify-center">
+        <Button title="Small Button" styles="px-4 py-2 text-sm rounded-sm" />
+        <Button title="Medium Button" styles="px-6 py-3 text-base rounded-md" />
+        <Button title="Large Button" styles="px-8 py-4 text-lg rounded-full" />
+        <Button title="Extra Large" styles="px-10 py-5 text-xl rounded-lg" />
       </div>
 
-      {/* Property Cards Grid */}
-      <h2 className="text-2xl font-semibold text-center mb-8">
-        Featured Properties
-      </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      {/* Property Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <Card />
         <Card />
         <Card />
